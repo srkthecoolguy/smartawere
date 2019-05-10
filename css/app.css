@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Delius+Swash+Caps|Patua+One|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Delius+Swash+Caps|Patua+One|Roboto:300,400|Aladin);
 
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
@@ -18088,7 +18088,7 @@ a {
 
 #about,
 #contact,
-#services #portfolio
+#services, #portfolio,
 #domainregi {
 	padding-top: 5rem;
 	padding-bottom: 5rem
@@ -18155,7 +18155,7 @@ header.masthead {
 }
 
 header.masthead #header-content {
-	background: url(../img/head.jpg) no-repeat;
+	background: url(../img/head1.jpg) no-repeat;
 	background-size: cover;
 	position: fixed;
 	min-height: 100%;
@@ -18433,7 +18433,7 @@ footer #social #social-ico {
 }
 
 footer #social #social-ico img {
-	height: 40px;
+	height: 70px;
 	max-width: 100%
 }
 
@@ -36603,7 +36603,8 @@ header.masthead {
 }
 
 header.masthead #header-content {
-	background: url(../img/head.jpg) no-repeat;
+	background: url(../img/head1.jpg) no-repeat;
+	filter: brightness(70%);
 	background-size: cover;
 	position: fixed;
 	min-height: 100%;
@@ -36884,11 +36885,6 @@ footer #social #social-ico .page-footer {
 	padding-top: 5px;
 }
 
-footer #social #social-ico img {
-	height: 40px;
-	max-width: 100%
-}
-
 @media only screen and (max-width:600px) {
 	.navbar .navbar-nav .nav-item .nav-link i {
 
@@ -36927,13 +36923,49 @@ main #main-content #portfolio #port-pro .pcon {
 	position: relative;
 	background-repeat: no-repeat !important;
 	display: block;
+}
 
 
+@media only screen and (max-width:600px) {
+	main #main-content #portfolio #port-pro .port-2-row{
+		display: none;
+	}
+	main #main-content #portfolio #port-pro .tile{
+		padding : 5px 50px;
+	}
 }
 
 main #main-content #portfolio #port-pro .pbg1 {
-	background: url(https://tdf.drdo.gov.in/datafiles/030b2d9f52c13162c194ee68f0db4351.jpg);
-
+	background: url(../img/ojs.jpg);
+	background-position: center center;
+}
+main #main-content #portfolio #port-pro .pbg2 {
+	background: url(../img/eternal.jpg);
+	background-position: center center;
+}
+main #main-content #portfolio #port-pro .pbg3 {
+	background: url(../img/srk.png);
+	background-position: center center;
+}
+main #main-content #portfolio #port-pro .pbg4 {
+	background: url(../img/arasan.jpg);
+	background-position: center center;
+}
+main #main-content #portfolio #port-pro .pbg5 {
+	background: url(../img/mlprd.jpg);
+	background-position: center center;
+}
+main #main-content #portfolio #port-pro .pbg6 {
+	background: url(../img/trend.jpg);
+	background-position: center center;
+}
+main #main-content #portfolio #port-pro .pbg7 {
+	background: url(../img/denovo.jpg);
+	background-position: center center;
+}
+main #main-content #portfolio #port-pro .pbg8 {
+	background: url(../img/winking.jpg);
+	background-position: center center;
 }
 
 main #main-content #portfolio #port-pro .pover {
@@ -36953,16 +36985,25 @@ main #main-content #portfolio #port-pro .pover:hover {
 main #main-content #portfolio #port-pro .pimg {
 	margin: 0 auto;
 	text-align: center;
+	font-size: 22px;
+	color: white;
+	font-weight: 300;
+}
+
+main #main-content #portfolio #port-pro .pimg .pbor {
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
 }
 
 main #main-content #portfolio #port-pro .pcon:hover .pimg {
 	opacity: 0;
 }
 
-main #main-content #portfolio #port-pro .pimg img {
+/* main #main-content #portfolio #port-pro .pimg img {
 	width: 50%;
 	z-index: 1;
-}
+	max-width: 80px;
+} */
 
 main #main-content #portfolio #port-pro .overlay {
 	position: absolute;
@@ -37011,16 +37052,13 @@ main #main-content #portfolio #port-pro .pcon:hover .pbut {
 }
 
 
-#social #social-ico ul#footlinks li a i img {
+#social #social-ico ul#footlinks li a i {
 	margin-right: 10px;
-	width: 10px;
-	height: 10px;
 	vertical-align: middle;
-
+	font-size: 10px;
 }
 
 #social #social-ico ul#footlinks li a {
-	margin: 5px 0px;
 	color: #fff;
 }
 
@@ -37031,41 +37069,30 @@ main #main-content #portfolio #port-pro .pcon:hover .pbut {
 
 
 #domainregi {
-	position: relative;
-	padding: 7px 0;
-	margin-top: -1px;
-	background-color: #202736;
-}
-
-#domainregi .left-content {
-	color: #fff;
-}
-
-#domainregi .right-content {
-	padding: 15px 15px 0 20px;
-}
-
-#domainregi .right-content a.extension span.name {
-	font-size: 22px;
-	display: block;
+	background-image:url(../img/server.jpg);
+	background-position: center bottom;
+	background-size: cover;
 	color: white;
 }
 
-#domainregi .right-content a.extension span.price {
-	font-size: 22px;
-	display: block;
+
+#domainregi .dom-hos span {
+	font-size: 30px;
+	font-weight: 300;
+}
+
+#domainregi .dom-hos i {
+	padding-right: 15px;
+	font-size: 30px;
 	color: white;
 }
 
-#domainregi .right-content a.extension {
-	display: block;
-	font-weight: 500;
-	border-right: 1px solid #fff;
+#domainregi .dom-hos p {
+	padding-left: 50px;
 }
 
-#domainregi .btn {
-	border: 1px solid #fff;
-	color: white;
-	display: initial;
+#domainregi .btn-orange {
+	background-color: #ffa638;
+	border: 2px solid black;
 }
 
