@@ -36985,7 +36985,7 @@ main #main-content #portfolio #port-pro .pover:hover {
 main #main-content #portfolio #port-pro .pimg {
 	margin: 0 auto;
 	text-align: center;
-	font-size: 22px;
+	font-size: 18px;
 	color: white;
 	font-weight: 300;
 }
@@ -36993,6 +36993,7 @@ main #main-content #portfolio #port-pro .pimg {
 main #main-content #portfolio #port-pro .pimg .pbor {
 	border-top: 2px solid white;
 	border-bottom: 2px solid white;
+	padding: 10px 0px;
 }
 
 main #main-content #portfolio #port-pro .pcon:hover .pimg {
@@ -37067,11 +37068,25 @@ main #main-content #portfolio #port-pro .pcon:hover .pbut {
 	text-decoration: none;
 }
 
+#domainregi{
+	position: relative;
+}
 
-#domainregi {
+#domainregi::before {
+	content: "";
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
 	background-image:url(../img/server.jpg);
 	background-position: center bottom;
 	background-size: cover;
+	
+	filter: brightness(50%);
+
+}
+
+#domainregi .domainregi-inside{
+	position: relative;
 	color: white;
 }
 
